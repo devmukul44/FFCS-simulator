@@ -1,0 +1,32 @@
+
+<html>
+  <head>
+    <title>New to Ajax</title>
+    <script>
+      function load()
+      {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+          {
+            document.getElementById("h4").innerHTML = "This is it";
+            document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+          }
+        }
+      xmlhttp.open("GET","random_pure.php",true);
+      xmlhttp.send();
+      setTimeout("load()",2000);
+      }
+	
+    </script>
+  </head>
+  <body>
+  
+  <h4 id="h4">Starts</h4>
+  <div id="myDiv">
+  <button onclick="load()">Start the timer </button>
+  </div>
+  </body>
+</html>
+
+

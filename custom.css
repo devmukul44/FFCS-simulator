@@ -1,0 +1,121 @@
+#heading{
+background-color:black;
+color:rgb(255,255,242);
+text-align:center;
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+font-size:150%;
+}
+#logout{
+//background-color:#30383b;
+position:absolute;
+text-align:right;
+top:50px;
+left:0px;
+width:100%;
+font-size:80%;
+}
+body.a{
+background-color:#30383b;
+}
+body.l{
+background-color:lightgrey;
+}
+#signup{
+margin:0 auto;
+text-align:center;
+font-size:150%;
+width:50%;
+}
+.myButton {
+	background-color:#B2B2B2;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #B2B2B2;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#D8D8D8;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.error{
+color:red;font-size:60%S;text-align:right;
+}
+.na{
+	position:fixed;
+	left:0px;
+}
+.nav ul li {
+	list-style:none;
+}
+.nav ul li  a {
+	display:block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.3em;
+	padding: 1em;
+	text-align: right;
+	background:#30383b;
+	position:relative;
+	width:100%;
+	left:-40px;
+}
+
+.nav ul li  a:hover{
+	background: #23aeac;
+	position:relative;
+	width:100%;
+	left:-40px;
+	text-decoration:underline;
+}
+.nav ul li a:active {
+	background: #000000;
+	position:relative;
+	width:100%;
+	left:-40px;
+}
+.searchbox{
+	//font-size:150%;
+	//text-align:right;
+	position:relative;
+	right:5px;
+}
+input[type="text"]
+{
+	font-size:150%;
+	height: 45px;
+	width: 220px;
+	border:2px solid silver;
+	border-radius:5px;
+	text-align:right;
+}
+input[type="password"]
+{
+	font-size:150%;
+	height: 45px;
+	width: 220px;
+	border:2px solid silver;
+	border-radius:5px;
+	text-align:right;
+}
+.sign_error{
+font-family: Times New Roman;
+color:red;font-size:60%S;
+}
+hr{
+width: 75%;
+}

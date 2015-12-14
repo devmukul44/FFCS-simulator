@@ -1,0 +1,34 @@
+table#t1{
+position : absolute;
+top : 0px;
+right: 0px;
+
+}
+table#t1,td,th,tr {
+font-size : 70%;  
+border : 1px solid;
+border-collapse: collapse;
+border-spacing: 2px;
+border-color: gray;
+}
+table#t1, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+table#t1,th, td {
+    text-align:center;
+}
+table#t1,th
+{
+	background-color:rgb(51, 153, 51);
+}
+.sub
+{
+	background-color:rgb(204, 255, 204);
+}
+.xyz
+{
+	background-color:rgb(51, 204, 51);
+}
+

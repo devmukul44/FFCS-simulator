@@ -1,0 +1,41 @@
+
+<html>
+  <head>
+    <title>New to Ajax</title>
+    <script>
+      function load()
+      {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+          {
+            document.getElementById("h4").innerHTML = "This is it";
+            document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+          }
+        }
+      var text = document.getElementById("search").value;
+      xmlhttp.open("GET","search.php?change_text="+text,true);
+      xmlhttp.send();
+      }
+	function load2()
+	{
+		alert("here");
+	}
+    </script>
+  </head>
+  <body>
+  
+  <h4 id="h4">Starts</h4>
+
+
+  <form>
+  <h5> Type here </h5>
+  <input type="text" id="search" name="change_text" onkeyup="load()">
+  </form>
+  <div id="myDiv">
+	<h6>Table comes here</h6>
+  </div>
+  </body>
+</html>
+
+

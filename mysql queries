@@ -1,0 +1,23 @@
+
+
+CREATE DATABASE web_proj;
+OR
+USE web_proj;
+
+CREATE TABLE course_list_test (c_num INT AUTO_INCREMENT PRIMARY KEY, c_name VARCHAR(50), seat_avail INT, modified_date TIMESTAMP);
+
+
+
+INSERT INTO course_list_test VALUES(1, 'WEB TECH', 50, NOW());
+INSERT INTO course_list_test VALUES(2, 'OTHER TECH', 36, NOW());
+INSERT INTO course_list_test VALUES(3, 'OOAD', 45, NOW());
+INSERT INTO course_list_test VALUES(4, 'OS', 55, NOW());
+INSERT INTO course_list_test VALUES(5, 'HCI', 64, NOW());
+INSERT INTO course_list_test VALUES(6, 'Let us C', 70, NOW());
+INSERT INTO course_list_test VALUES(7, 'Prog in Java', 64, NOW());
+
+
+CREATE TABLE course_list (Course_code VARCHAR(30), COURSE_TITLE VARCHAR(30), COURSE_TYPE VARCHAR(10), L INT, T INT, P INT, C INT, SCHOOL VARCHAR(20), CLASSNBR INT, SLOT VARCHAR(30), VENUE VARCHAR(20), FACULTY_NAME VARCHAR (50), COURSE_MODE VARCHAR(10), TOTAL_SEATS INT, AVAILABLE_SEATS INT, modified_date TIMESTAMP, reg INT DEFAULT 0);
+
+INSERT INTO mukul_course SELECT * FROM course_list;
+
